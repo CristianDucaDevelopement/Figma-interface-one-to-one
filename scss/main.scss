@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+// pentru toate calsele care se afla in interiorul parintelui ar fi bine sa lasi un spatiu de un rand intre ele (e mai sur de citit)
+.side_bar{
+    background-color: #4a4a4a;
+    display: flex;
+    flex-direction: column;
+    max-width: 25%;
+    height: 100vh;
+
+    &-account-info{
+
+    }
+
+    &-item{
+        color: white;
+        border: 1px solid whitesmoke;
+        padding: 10px;
+    }
+    &-item.plans {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    // view-plans ar trbui sa fie mutat in &-item deoarce este copilul lui
+    .view-plans{
+    background-color: #1a8ce9;
+    border: none;
+    padding: 10px 20px;
+    margin: 15px 0;
+    width: 90%;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;  
+    transition: 100ms ease-in-out all;     
+    }
+    // la fel
+    .view-plans:hover{
+        transform: scale(1.1);
+    }
+
+    &-item.plans > i{
+        padding: 10px;
+        font-size: 20px;
+        background-color: transparent !important;
+        color: whitesmoke;
+        transition: 100ms ease-in-out all;   
+    }
+    &-item.plans > i:hover {
+        transform: scale(1.1);
+    }
+
+    &-item.plans > p{
+        width: 80%;
+    }
+// &-item{
+//  h2{
+
+// }
+// }
+    &-item > h2 {
+        padding: 10px 0;
+    }
+    &-item > p {
+        padding: 10px 0;
+    }
+}
+
+.aside_secondary{
+    padding:10px 0;
+
+    &-item{
+        color: white;
+        padding: 10px;
+    }
+    &-item:hover {
+        background-color: adjust-hue($color: #4a5877, $degrees: 0);
+    }
+
+
+    &-item > i {
+        margin: 0 5px;
+    }
+}

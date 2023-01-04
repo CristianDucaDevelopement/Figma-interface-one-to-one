@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.side_bar {
+  background-color: #4a4a4a;
+  display: flex;
+  flex-direction: column;
+  max-width: 25%;
+  height: 100vh;
+}
+.side_bar-item {
+  color: white;
+  border: 1px solid whitesmoke;
+  padding: 10px;
+}
+.side_bar-item.plans {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.side_bar .view-plans {
+  background-color: #1a8ce9;
+  border: none;
+  padding: 10px 20px;
+  margin: 15px 0;
+  width: 90%;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  transition: 100ms ease-in-out all;
+}
+.side_bar .view-plans:hover {
+  transform: scale(1.1);
+}
+.side_bar-item.plans > i {
+  padding: 10px;
+  font-size: 20px;
+  background-color: transparent !important;
+  color: whitesmoke;
+  transition: 100ms ease-in-out all;
+}
+.side_bar-item.plans > i:hover {
+  transform: scale(1.1);
+}
+.side_bar-item.plans > p {
+  width: 80%;
+}
+.side_bar-item > h2 {
+  padding: 10px 0;
+}
+.side_bar-item > p {
+  padding: 10px 0;
+}
+
+.aside_secondary {
+  padding: 10px 0;
+}
+.aside_secondary-item {
+  color: white;
+  padding: 10px;
+}
+.aside_secondary-item:hover {
+  background-color: #4a5877;
+}
+.aside_secondary-item > i {
+  margin: 0 5px;
+}/*# sourceMappingURL=main.css.map */
